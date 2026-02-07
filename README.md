@@ -4,27 +4,27 @@ Python application that designs timber frame structures based on user-specified 
 
 ## Quick Start
 
-# 1. Install system dependencies
+### 1. Install system dependencies
 sudo apt update && sudo apt install python3 python3-venv python3-pip python3-tk -y
 
-# 2. Go to your project directory
-cd ~/your/git/directory
-git clone https://github.com/CyberDiary2/TimberFrameDesigner.git
+### 2. Go to your project directory
+cd ~/your/git/directory  
+
+git clone https://github.com/CyberDiary2/TimberFrameDesigner.git  
+
 cd TimberFrameDesigner
 
-# 3. Create virtual environment
+### 3. Create virtual environment
 python3 -m venv venv
 
-# 4. Activate it
+### 4. Activate it  
 source venv/bin/activate
 
-# 5. Install packages
+### 5. Install packages  
 pip install -r requirements.txt
 
-# Install dependencies
-pip install -r requirements.txt
 
-# Run the program
+### 6. Run the program  
 python timber_frame_designer.py
 
 ## Requirements
