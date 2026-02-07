@@ -155,8 +155,7 @@ MATERIAL REQUIREMENTS (Approximate):
   Posts:         {self.num_bents * 2} pieces @ {self.wall_height} ft
   Beams:         {self.num_bents} pieces @ {self.width} ft
   Rafters:       {self.num_bents * 2} pieces @ {(self.width/2) / np.cos(np.arctan(self.roof_pitch)):.1f} ft
-  Plates:        {int((self.length * 2 + self.width * 2) / 16) + 1} pieces @ 16 ft
-
+  Plates:        {int(np.ceil(self.length * 2 / 16))} pieces @ 16 ft (both walls)
 NOTE: This is a preliminary design. Consult a licensed structural 
 engineer for final design and local building code compliance.
         """
